@@ -1,1 +1,14 @@
-...
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{BDSA2021 - Week 2 Exercises}
+\author{milb@itu.dk - jodi@itu.dk - kong@itu.dk}
+\date{September 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\end{document}
