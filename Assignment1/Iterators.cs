@@ -6,7 +6,7 @@ namespace Assignment1 {
 
         public static void Main(string[] args) {
 
-            Console.WriteLine("starting!");
+            Console.WriteLine("Starting!");
             Predicate<int> even = Even;
 
         }
