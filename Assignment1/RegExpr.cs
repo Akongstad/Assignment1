@@ -29,7 +29,16 @@ namespace Assignment1 {
         }
 
         public static IEnumerable<string> InnerText(string html, string tag) {
-            throw new NotImplementedException();
+
+            var pattern = "<([" + tag + "]).*?>(.*?)</\\1>";
+            var matches = Regex.Matches(html, pattern);
+
+            foreach (Match match in matches) {
+                var textMatch = match.Groups[2].Value;
+                var removedTags = Regex.Replace(textMatch, "<(.*?)>", "");
+                yield return removedTags;
+            }
+
         }
     }
 }

@@ -7,14 +7,6 @@ namespace Assignment1 {
         public static void Main(string[] args) {
 
             Console.WriteLine("Starting!");
-
-            var test = new List<string> { "1920x1080", "1024x768, 800x600, 640x480", "320x200, 320x240, 800x600", "1280x960" };
-
-            var t = RegExpr.Resolution(test);
-
-            foreach (var bib in t) {
-                Console.WriteLine($"({bib.width}, {bib.height})");
-            }
         }
 
         public static bool Even(int i) {
