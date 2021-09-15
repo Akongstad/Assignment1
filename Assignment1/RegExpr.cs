@@ -46,9 +46,6 @@ namespace Assignment1
 
             }
         }
-
-
-
         public static IEnumerable<string> InnerText(string html, string tag)
         {
             var pattern = "<(["+tag+"]).*?>(.*?)</\\1>";
