@@ -1,5 +1,9 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{listings}
+\setlength{\parindent}{0pt}
+\linespread{1.5}
 
 \title{BDSA2021 - Week 2 Exercises}
 \author{milb@itu.dk - jodi@itu.dk - kong@itu.dk}
@@ -9,6 +13,83 @@
 
 \maketitle
 
-\section{Introduction}
+\section{C\#}
 
+\subsection{Github Repository}
+\href{https://github.com/Akongstad/Assignment1.git}{https://github.com/Akongstad/Assignment1.git}
+\subsection{Generics}
+The first statement indicates that T needs to implement type IComparable.
+This means that T and U aren't necessarily the same type and therefore can't be compared. \\
+
+
+The second statement indicates that both T and U needs to implement the type IComparable. When both T and U are the same type of IComparable, it ensures that they are guaranteed to be comparable. 
+
+
+\section{Software Engineering}
+
+\subsection{Exercise 1}
+{\it What is meant by “knowledge acquisition is not sequential”? Provide a concrete example of knowledge acquisition that illustrates this.}
+\newline\newline
+When modeling the application and solution domain, software engineers turn gathered information and data into knowledge. The acquisition of this knowledge is not linear, as single pieces of data can make preexisting knowledge and models useless.
+\newline Example: Once upon a time humans believed earth was the center of the universe and thus scientific models and ideas were built around this being a fact. When the theory was debunked all the previous knowledge and scientific models were invalidated.
+
+
+\subsection{Exercise 2}
+{\it Specify which of the following decisions were made during requirements or system design:}
+
+\begin{itemize}
+    \item{\it “The ticket distributor is composed of a user interface subsystem, a subsystem for computing tariff, and a network subsystem managing communication with the central computer.”}
+    \newline Part of system design. Technical description of system elements and their interactions.
+    \item {\it“The ticket distributor will use PowerPC processor chips.”}
+    \newline Part of requirements. The system will run on specific hardware.
+    \item {\it“The ticket distributor provides the traveler with an on-line help.”}
+    \newline This sentence also falls under 'requirements'. It is written as a functional requirement because it states a service the system provides.
+\end{itemize}
+
+
+\subsection{Exercise 3}
+{\it In the following description, explain when the term account is used as an application domain concept and when as a solution domain concept:
+\newline\newline
+"Assume you are developing an online system for managing bank accounts (\textbf{Application domain}) for mobile customers. A major design issue is how to provide access to the accounts (\textbf{Application domain}) when the customer cannot establish an online connection. One proposal is that accounts (\textbf{Solution Domain}) are made available on the mobile computer, even if the server is not up. In this case, the accounts (\textbf{Solution domain}) show the amounts from the last connected session."}
+\newline\newline The first 2 uses of "Account" portray the objects and relations. The last 2 transforms the established application domain into the solution domain
+
+\subsection{Exercise 4}
+{\it A passenger aircraft is composed of several millions of individual parts and requires thousands of persons to assemble. A four-lane highway bridge is another example of complexity. The first version of Word for Windows, a word processor released by Microsoft in November 1989, required 55 person-years, resulted into 249,000 lines of source code, and was delivered 4 years late. Aircraft and highway bridges are usually delivered on time and below budget, whereas software is often not. Discuss what are, in your opinion, the differences between developing an aircraft, a bridge, and a word processor, which would cause this situation.}
+\newline\newline
+The difference between building an aircraft and a software solution, lies in the uniqueness of the project. The blueprint and model is already laid out when assembling an aircraft. When building a software solution, even tho you might be able to reuse parts, there will always be an unknown part that needs to be fitted to exact problem domain. 
+\newline\newline
+This unknown part makes it hard to estimate a delivery time and a budget when building software. Furthermore, you do not have a physical and visual representation of the progress when building a software solution. 
+
+\subsection{Exercise 5}
+{\it Specify which of these statements are functional requirements and which are nonfunctional requirements:}\newline
+
+\textit{"The TicketDistributor must enable a traveler to buy weekly passes."}
+\begin{itemize}
+\item Functional requirement\newline
+\end{itemize}
+
+\textit{"The TicketDistributor must be written in Java."}
+\begin{itemize}
+\item Non-functional / Domain requirement\newline
+\end{itemize}
+
+\textit{The TicketDistributor must be easy to use.}
+\begin{itemize}
+\item Non-functional\newline
+\end{itemize}
+
+\textit{The TicketDistributor must always be available.}
+\begin{itemize}
+\item Non-functional (not realistic)\newline
+\end{itemize}
+\textit{The TicketDistributor must provide a phone number to call when it fails.}
+\begin{itemize}
+\item Functional requirement\newline
+\end{itemize}
+
+
+
+\subsection{Exercise 6}
+{\it What is the purpose of modeling?}\newline\newline
+Modelling has been widely used in all fields of science. Modelling is used to generate an abstract and understandable/easier to work with visual depiction of a system. When building software it is not necessary to become an expert in the field of the problem domain, but only understand enough to be able to build a model a of the application domain in order to ultimately build a model of the proposed solution domain.
 \end{document}
